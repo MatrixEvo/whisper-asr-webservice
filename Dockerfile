@@ -8,6 +8,17 @@ LABEL org.opencontainers.image.source="https://github.com/ahmetoner/whisper-asr-
 
 ENV POETRY_VENV=/app/.venv
 
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    pkg-config \
+    libavformat-dev \
+    libavcodec-dev \
+    libavdevice-dev \
+    libavutil-dev \
+    libswscale-dev \
+    libswresample-dev \
+    libavfilter-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN python3 -m venv $POETRY_VENV \
     && $POETRY_VENV/bin/pip install -U pip setuptools \
     && $POETRY_VENV/bin/pip install poetry==2.1.3
