@@ -41,8 +41,8 @@ cpu = [
     "torchaudio (==2.8.0)"
 ]
 cuda = [
-    "torch (==2.8.0+cu132)",
-    "torchaudio (==2.8.0+cu132)"
+    "torch (==2.8.0+cu129)",
+    "torchaudio (==2.8.0+cu129)"
 ]
 
 [[tool.poetry.source]]
@@ -52,7 +52,7 @@ priority = "explicit"
 
 [[tool.poetry.source]]
 name = "pytorch-cuda"
-url = "https://download.pytorch.org/whl/cu132"
+url = "https://download.pytorch.org/whl/cu129"
 priority = "explicit"
 
 [tool.poetry.dependencies]
