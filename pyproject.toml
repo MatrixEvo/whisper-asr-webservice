@@ -37,12 +37,12 @@ whisper-asr-webservice = "app.webservice:start"
 
 [project.optional-dependencies]
 cpu = [
-    "torch (==2.8.1)",
-    "torchaudio (==2.8.1)"
+    "torch (==2.8.0)",
+    "torchaudio (==2.8.0)"
 ]
 cuda = [
-    "torch (==2.8.1+cu132)",
-    "torchaudio (==2.8.1+cu132)"
+    "torch (==2.8.0+cu132)",
+    "torchaudio (==2.8.0+cu132)"
 ]
 
 [[tool.poetry.source]]
