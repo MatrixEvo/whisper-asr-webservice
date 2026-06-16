@@ -4,6 +4,21 @@ Changelog
 Unreleased
 ----------
 
+[1.10.0] (2026-06-17)
+--------------------
+
+### Changed
+
+- Upgraded base image to use `python:3.12-bookworm`
+- Upgraded Cuda GPU image to `13.2.0-base-ubuntu22.04` to support RTX 5090
+- Upgraded dependencies
+  - [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) to [v1.2.1](https://github.com/SYSTRAN/faster-whisper/releases/tag/v1.2.1)
+  - [whisperX](https://github.com/m-bain/whisperX)@[v3.8.6](https://github.com/m-bain/whisperX/releases/tag/v3.8.6)
+  - torch to v2.12.0
+  - torchaudio to v2.11.0
+  - fastapi to v0.137.1
+  - uvicorn to v0.49.0
+
 [1.9.1] (2025-07-01)
 --------------------
 
@@ -306,6 +321,7 @@ Unreleased
 - mp3 support by using FFmpeg instead of librosa in #8
 - add language detection endpoint in #9
 
+[1.10.0]: https://github.com/ahmetoner/whisper-asr-webservice/releases/tag/v1.10.0
 [1.9.1]: https://github.com/ahmetoner/whisper-asr-webservice/releases/tag/v1.9.1
 [1.9.0]: https://github.com/ahmetoner/whisper-asr-webservice/releases/tag/v1.9.0
 [1.8.2]: https://github.com/ahmetoner/whisper-asr-webservice/releases/tag/v1.8.2
